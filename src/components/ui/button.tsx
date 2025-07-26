@@ -18,12 +18,18 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        // Budget app specific variants
+        coin: "bg-gradient-coin text-primary-foreground hover:scale-105 transition-transform shadow-coin border border-coin-shine/30",
+        savings: "bg-gradient-savings text-accent-foreground hover:bg-savings-green/90 shadow-md",
+        expense: "bg-expense-red text-destructive-foreground hover:bg-expense-red/90",
+        jar: "bg-jar-glass text-foreground border border-jar-rim hover:bg-jar-glass/80 shadow-jar"
       },
       size: {
         default: "h-10 px-4 py-2",
         sm: "h-9 rounded-md px-3",
         lg: "h-11 rounded-md px-8",
         icon: "h-10 w-10",
+        coin: "h-12 w-12 rounded-full"
       },
     },
     defaultVariants: {
