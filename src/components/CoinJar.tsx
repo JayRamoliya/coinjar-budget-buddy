@@ -38,9 +38,11 @@ const CoinJar: React.FC<CoinJarProps> = ({ remainingAmount, totalBudget, classNa
           {/* Coins */}
           <div className="absolute inset-2 overflow-hidden rounded-b-3xl">
             {coins.map((coin) => (
-              <div
+              <img
                 key={coin.id}
-                className="absolute bg-gradient-coin rounded-full shadow-coin animate-float border border-coin-shine/50"
+                src="/dollar.png" // 🪙 Replace with your actual image path
+                alt="coin"
+                className="absolute animate-float"
                 style={{
                   width: `${20 * coin.size}px`,
                   height: `${20 * coin.size}px`,
